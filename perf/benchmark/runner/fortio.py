@@ -157,6 +157,7 @@ def sync_fortio(url, table, selector=None, promUrl="", csv=None, csv_output="", 
                         print("file finished!")
                         break
                 print(e)
+                continue
 
             gd = convert_data(data_dict)
             if gd is None:
